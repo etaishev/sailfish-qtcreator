@@ -41,6 +41,7 @@
 #include <qtsupport/qtversionmanager.h>
 #include <utils/hostosinfo.h>
 #include <utils/qtcassert.h>
+#include <qmakeprojectmanager/qmakekitinformation.h>
 
 #include <QDir>
 #include <QStringList>
@@ -190,6 +191,9 @@ Kit* MerTarget::createKit() const
 
     MerSdkKitInformation::setSdk(k,m_sdk);
     MerTargetKitInformation::setTargetName(k,name());
+
+    k->setValue(QmakeProjectManager::QmakeKitInformation::id(), Constants::MER_KIT_MKSPEC_NAME);
+
     return k;
 }
 

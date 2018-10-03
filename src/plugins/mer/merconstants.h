@@ -181,6 +181,8 @@ const int DEFAULT_QML_LIVE_PORT = 10234;
 const int MAX_QML_LIVE_PORTS = 10;
 const char QML_LIVE_HELP_URL[] = "qthelp://org.qt-project.qtcreator/doc/creator-qtquick-qmllive-sailfish.html";
 
+const char MER_KIT_MKSPEC_NAME[] = "sailfish-g++";
+
 } // namespace Constants
 } // namespace Mer
 
