@@ -11,6 +11,12 @@ SOURCES += \
     dependencymodel.cpp \
     sailfishprojectdependencies.cpp \
     wizardpage.cpp \
+    desktopwizardfactory.cpp \
+    desktopwizardpages.cpp \
+    desktopeditorfactory.cpp \
+    desktopeditor.cpp \
+    desktopeditorwidget.cpp \
+    desktopdocument.cpp \
 
 HEADERS += \
     common.h \
@@ -21,6 +27,12 @@ HEADERS += \
     dependencymodel.h \
     sailfishprojectdependencies.h \
     wizardpage.h \
+    desktopwizardfactory.h \
+    desktopwizardpages.h \
+    desktopeditorfactory.h \
+    desktopeditor.h \
+    desktopeditorwidget.h \
+    desktopdocument.h \
 
 ###### If the plugin can be depended upon by other plugins, this code needs to be outsourced to
 ###### <dirname>_dependencies.pri, where <dirname> is the name of the directory containing the
@@ -41,3 +53,9 @@ FORMS += \
     forms/choicefiledialog.ui \
     forms/externallibrarydialog.ui \
     forms/externallibrarypage.ui \
+    forms/desktopfilesettingpage.ui \
+    forms/desktopselectpage.ui \
+    forms/desktopiconpage.ui \
+
+RESOURCES += \
+    resources.qrc \
